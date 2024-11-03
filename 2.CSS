@@ -1,74 +1,62 @@
-/* Dark Mode Colors */
+/* Apply a dark background color to the body */
 body {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #121212; /* Black background */
+    color: #ffffff; /* White text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul {
-    background-color: #333;
+/* Style headings and text */
+h1, h2, h3, p {
+    color: #e0e0e0; /* Light grey text */
 }
 
-nav ul li a {
-    color: #e0e0e0;
+/* Style links */
+a {
+    color: #bb86fc; /* Soft purple accent */
+    text-decoration: none;
 }
 
-nav ul li a:hover {
-    background-color: #555;
+a:hover {
+    color: #6200ea; /* Darker purple */
 }
 
-section {
-    background-color: #1e1e1e;
-    border-radius: 8px;
-    padding: 40px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* Button Styling */
+button {
+    background-color: #6200ea;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
+button:hover {
+    background-color: #3700b3; /* Slightly darker on hover */
+}
+
+/* Form input styling */
+input, textarea {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #444444;
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+/* Gallery */
 .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.media-item {
     background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
+    color: #ffffff;
 }
-
-.media-item p {
-    color: #b3b3b3;
-}
-
-/* Contact Form */
-form input, form textarea {
-    background-color: #333;
-    color: #e0e0e0;
-    border: 1px solid #555;
-}
-
-form button {
-    background-color: #333;
-    color: #e0e0e0;
-}
-
-form button:hover {
-    background-color: #555;
-}
-
-/* Dark mode class */
-.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
-}
-
-.dark-mode nav ul {
-    background-color: #333;
-}
-
-.dark-mode nav ul li a {
-    color: #e0e0e0;
-}
-
-.dark-mode section {
-    background-color: #1e1e1e;
-}
-
-.dark-mode form input, .dark-mode form textarea {
-    background-color: #333;
-    color: #e0e0e0;
-}
-

@@ -44,17 +44,36 @@
         </form>
     </section>
 
+    <!-- Messages Section -->
+    <section id="messages">
+        <h2>Messages</h2>
+        <!-- Messages will load here dynamically -->
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="additional-portfolio">
+        <h2>More Work</h2>
+        <div id="gallery" class="gallery">
+            <!-- Additional images will load here dynamically -->
+        </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
 
-<section id="messages">
-    <!-- Messages will load here dynamically -->
+<section id="gallery">
+    <h2>My Work</h2>
+    <div class="gallery"></div>
+    <!-- Input for new photo -->
+    <input type="text" id="photoURL" placeholder="Enter photo URL">
+    <button onclick="addPhoto()">Add Photo</button>
 </section>
 
-<section id="portfolio">
-    <h2>My Work</h2>
-    <div id="gallery" class="gallery">
-        <!-- Images will load here dynamically -->
-    </div>
+<section id="messages">
+    <h2>Messages</h2>
+    <div class="messages"></div>
+    <!-- Input for new message -->
+    <textarea id="newMessage" placeholder="Write a message"></textarea>
+    <button onclick="addMessage()">Add Message</button>
 </section>

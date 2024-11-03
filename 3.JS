@@ -38,3 +38,34 @@ fetch("content.json")
         });
     })
     .catch(error => console.error("Error loading content:", error));
+
+    // Function to add a photo to the gallery
+function addPhoto() {
+    const url = document.getElementById('photoURL').value;
+    if (url) {
+        const gallery = document.querySelector('.gallery');
+        const mediaItem = document.createElement('div');
+        mediaItem.classList.add('media-item');
+        mediaItem.innerHTML = `<img src="${url}" alt="New Photo" style="width:100%;"><p>New Photo</p>`;
+        gallery.appendChild(mediaItem);
+        document.getElementById('photoURL').value = ''; // Clear input
+    } else {
+        alert("Please enter a photo URL.");
+    }
+}
+
+// Function to add a message to the messages section
+function addMessage() {
+    const message = document.getElementById('newMessage').value;
+    if (message) {
+        const messagesSection = document.querySelector('.messages');
+        const messageDiv = document.createElement('div');
+        messageDiv.classList.add('message-item');
+        messageDiv.innerHTML = `<p>${message}</p>`;
+        messagesSection.appendChild(messageDiv);
+        document.getElementById('newMessage').value = ''; // Clear input
+    } else {
+        alert("Please write a message.");
+    }
+}
+
